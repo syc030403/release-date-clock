@@ -1,21 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
-import ACcounter from './ACcounter';
+import Countdown from './ACVIcounter';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          <ACcounter/>
+          <Countdown/>
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://store.steampowered.com/app/1888160/__VI/?l=koreana"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          ARMORED CORE VI FIRES OF RUBICON
         </a>
       </header>
     </div>
