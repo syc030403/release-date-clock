@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Countdown from './ACVIcounter';
+import ACVIcounter from './ACVIcounterDEMO';
 function App() {
   return (
     <div className="App">
@@ -9,6 +10,7 @@ function App() {
         <p>
           <Countdown/>
         </p>
+        
         <a
           className="App-link"
           href="https://store.steampowered.com/app/1888160/__VI/?l=koreana"
