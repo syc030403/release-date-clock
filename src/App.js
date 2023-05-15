@@ -17,7 +17,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          ARMORED CORE VI FIRES OF RUBICON
+          ARMORED CORE VI FIRES OF RUBICON STEAM LINK
         </a>
       </header>
     </div>
