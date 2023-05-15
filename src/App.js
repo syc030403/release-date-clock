@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Countdown from './ACVIcounter';
-import ACVIcounter from './ACVIcounterDEMO';
+
 function App() {
   return (
     <div className="App">
