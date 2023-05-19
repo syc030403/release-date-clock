@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import Countdown from './Components/ACVIcounter';
-import VideoPlayer from './Components/ACVIvideo';
-import Sidebar from './Components/Sidebar';
+import Countdown from './Components_Css/ACVIcounter';
+import VideoPlayer from './Components_Css/ACVIvideo';
+import Sidebar from './Components_Css/Sidebar';
 
 function App() {
   return (
