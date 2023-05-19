@@ -1,41 +1,23 @@
-import React, {useEffect, useRef, useState } from "react";
-import styles from "./sidebar.module.css";
+import React, {useEffect, useRef, useState} from "react";
+import styles from "./Sidebar.module.css";
 
 
 const Sidebar = ({ width=280, children }) => {
   const [isOpen, setOpen] = useState(false);
-  const [xPosition, setX] = useState(-width);
+  const [xPosition, setX] = useState(width);
   const side = useRef();
   
   // button 클릭 시 토글
   const toggleMenu = () => {
-    if (xPosition < 0) {
+    if (xPosition > 0) {
       setX(0);
       setOpen(true);
     } else {
-      setX(-width);
+      setX(width);
       setOpen(false);
     }
   };
   
-  // 사이드바 외부 클릭시 닫히는 함수
-  const handleClose = async e => {
-    let sideArea = side.current;
-    let sideCildren = side.current.contains(e.target);
-    if (isOpen && (!sideArea || !sideCildren)) {
-      await setX(-width); 
-      await setOpen(false);
-    }
-  }
-
-  useEffect(()=> {
-    window.addEventListener('click', handleClose);
-    return () => {
-      window.removeEventListener('click', handleClose);
-    };
-  })
-
-
   return (
     <div className={styles.container}>
       <div ref={side}  className={styles.sidebar} style={{ width: `${width}px`, height: '100%',  transform: `translatex(${-xPosition}px)`}}>
@@ -45,11 +27,24 @@ const Sidebar = ({ width=280, children }) => {
             <span>X</span> : <img src="images/avatar.png" alr="contact open button" className={styles.openBtn}/>
             }
           </button>
-        <div className={styles.content}>{children}</div> //사이드바 컴포넌트 내부 값이 구현되는 위치
+        
+        <div className={styles.content}>{children}</div>
       </div>
     </div>
   );
 };
 
+const App = () => {
+  return (
+    <div>
+      <Sidebar width={300}>
+        {/* 사이드바 내용 */}
+        <h1>사이드바</h1>
+        <p>여기에 추가적인 내용이 들어갑니다.</p>
+      </Sidebar>
+      {/* 다른 컴포넌트 내용 */}
+    </div>
+  );
+}
 
 export default Sidebar;
