@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import Countdown from './ACVIcounter';
-import VideoPlayer from './ACVIvideo';
+import Countdown from './Components/ACVIcounter';
+import VideoPlayer from './Components/ACVIvideo';
+import Sidebar from './Components/Sidebar';
+
 function App() {
   return (
     <div className="App">
