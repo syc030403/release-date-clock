@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import Countdown from './Components_Css/ACVIcounter';
-import VideoPlayer from './Components_Css/ACVIvideo';
-import Sidebar from './Components_Css/Sidebar';
+import Countdown from './Components&Css/ACVIcounter';
+import VideoPlayer from './Components&Css/ACVIvideo';
+import Sidebar from './Components&Css/Sidebar';
 import React,{ useState } from 'react';
 
 function App() {
@@ -20,7 +20,8 @@ function App() {
       </header>
       <div>
           <Sidebar width={300}>
-            <div>
+
+            <div className='MORE INFO'>
               MORE INFO
             </div>
           <a
