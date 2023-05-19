@@ -9,7 +9,7 @@ function VideoPlayer() {
     
     return (
       <div id="video-container">
-        <YouTube videoId="UJZrdD6MdAo" onReady={onReady} />
+        <YouTube videoId="SlSfr6Wa5sc" onReady={onReady} />
       </div>
     );
   }
