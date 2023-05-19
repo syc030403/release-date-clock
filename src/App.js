@@ -16,21 +16,23 @@ function App() {
           <Countdown/>
         </p>
         <div>
-        <div>
+        </div>
+      </header>
+      <div>
           <Sidebar width={300}>
-        
-          </Sidebar>
-        </div>
-        </div>
-        <a
+            <div>
+              MORE INFO
+            </div>
+          <a
           className="App-link"
           href="https://store.steampowered.com/app/1888160/__VI/?l=koreana"
           target="_blank"
           rel="noopener noreferrer"
-        >
-          ARMORED CORE VI FIRES OF RUBICON STEAM LINK
+          >
+          STEAM LINK
         </a>
-      </header>
+          </Sidebar>
+        </div>
     </div>
     
   );
