@@ -3,6 +3,7 @@ import './App.css';
 import Countdown from './Components_Css/ACVIcounter';
 import VideoPlayer from './Components_Css/ACVIvideo';
 import Sidebar from './Components_Css/Sidebar';
+import React,{ useState } from 'react';
 
 function App() {
   return (
@@ -14,7 +15,13 @@ function App() {
         <p>
           <Countdown/>
         </p>
+        <div>
+        <div>
+          <Sidebar width={300}>
         
+          </Sidebar>
+        </div>
+        </div>
         <a
           className="App-link"
           href="https://store.steampowered.com/app/1888160/__VI/?l=koreana"
@@ -25,7 +32,9 @@ function App() {
         </a>
       </header>
     </div>
+    
   );
 }
+
 
 export default App;
