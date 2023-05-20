@@ -20,8 +20,7 @@ function App() {
       </header>
       <div>
           <Sidebar width={300}>
-
-            <div className='MORE INFO'>
+            <div className='TextBox'>
               MORE INFO
             </div>
           <a

@@ -21,7 +21,12 @@
 }
 
 .App-link {
+  text-align: center;
   color: #61dafb;
 }
 
-
+.TextBox {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+}
